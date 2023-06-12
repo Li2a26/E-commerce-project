@@ -1,0 +1,58 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body {
+    background-image: url(https://i.postimg.cc/g229vXsp/concelaor.png);
+    
+}
+.navbar-brand {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size:30px;
+    font-weight: 100;
+}
+.navbar{
+    background-color: lightpink;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+
+.btn1 {
+    border-radius: 5px!important;
+    border-color: antiquewhite;
+    background-color: lightpink;
+    border-color: lightcoral 10px;
+    margin: 12px;
+  height: 50px;
+  width: 120px;
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+  box-shadow: -5px -5px 15px antiquewhite, 5px 5px 15px antiquewhite, inset 5px 5px 10px antiquewhite, inset -5px -5px 10px lightcoral;
+  font-family: 'Damion', cursive;
+  border: none;
+  font-size: 16px;
+  color: black;
+  transition: 500ms;
+}
+.btn1:hover {box-shadow: -5px -5px 15px antiquewhite, 5px 5px 15px antiquewhite, inset 5px 5px 10px lightcoral, inset -5px -5px 10px lightcoral;
+    color:black;
+    transition: 500ms;
+  }
+
+.navbar-toggler {
+    background-color: antiquewhite;
+}
+
+.form-control {
+    background-color: antiquewhite;
+    border-radius: 10px;
+    border-color: lightpink;
+
+}
+.form-control:hover {
+    background-color: lightpink;
+}
+.drop-item 
+
