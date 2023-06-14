@@ -6,11 +6,12 @@
 body {
     background-image: url(https://i.postimg.cc/g229vXsp/concelaor.png);
     
+    
 }
 .navbar-brand {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size:30px;
-    font-weight: 100;
+
 }
 .navbar{
     background-color: lightpink;
@@ -45,6 +46,7 @@ body {
     background-color: antiquewhite;
 }
 
+
 .form-control {
     background-color: antiquewhite;
     border-radius: 10px;
@@ -54,7 +56,19 @@ body {
 .form-control:hover {
     background-color: lightpink;
 }
-.drop-item {
+#navS {
+    background-color: antiquewhite;
+    border-radius: 20px;
+    color: black;
+    width: 90px;
+    text-align: center;
+    margin: 5px;
+}
+#navS:hover {
+    background-color: lightpink;
     
 }
-
+#cart-icon {
+    width: 33px;
+    height: 25px;
+}

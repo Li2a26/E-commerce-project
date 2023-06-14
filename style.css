@@ -1,10 +1,55 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .navbar{
     background-color: lightpink;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+.navbar-brand {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size:30px !important;
     
 }
 
+body {
+    background-color: antiquewhite !important;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#navS {
+    background-color: antiquewhite;
+    border-radius: 20px;
+    color: black;
+    width: 90px;
+    text-align: center;
+    margin: 5px;
+}
+#navS:hover {
+    background-color: lightpink;
+    
+}
+.navbar-toggler {
+    background-color: antiquewhite !important;
+}
+#barbie {
+    background-color: lightcoral !important;
+    border-radius: 20px;
+    width: 30px;
+}
+
+#cart-icon {
+    width: 33px;
+    height: 25px;
+}
+
+main {
+    height:110vh;
+}
+
+.pic {
+    width: 400px;
+} 

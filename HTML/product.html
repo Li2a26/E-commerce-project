@@ -21,26 +21,29 @@
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <div class="collapse navbar-collapse   justify-content-end" id="navbarNavDropdown">
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+                <a class="nav-link active"  aria-current="page" id="navS"   href="/index.html">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link"  id="navS"   href="./HTML/about.html">About</a>
+                <a class="nav-link"  id="navS"   href="./about.html">About</a>  
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="./HTML/contact.html">Contact</a>
+                <a class="nav-link"  id="navS"     href="./contact.html">Contact</a>
               </li>
+            </li><li class="nav-item">
+              <a class="nav-link"  id="navS" data-bs-toggle="modal"
+              data-bs-target="#myModal"  href="#myModal"><img src="https://i.postimg.cc/DzHKpVkv/cart.png" alt="cart-icon" id="cart-icon">  </a>
+            </li>
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <a class="nav-link dropdown-toggle" id="navS"        href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   More
                 </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="./HTML/product.html">Products</a></li>
-                  <li><a class="dropdown-item" href="./HTML/cart.html">Cart</a></li>
-                  <li><a class="dropdown-item" href="./HTML/admin.html">Admin</a></li>
-                  <li><a class="dropdown-item" href="./HTML/checkout.html">Checkout</a></li>
+                <ul class="dropdown-menu" id="barbie">
+                  <li><a class="dropdown-item"  id="navS"        href="./product.html">Products</a></li>
+                  <li><a class="dropdown-item"  id="navS"      href="./admin.html">Admin</a></li>
+                  <li><a class="dropdown-item"  id="navS"       href="./checkout.html">Checkout</a></li>
 
                 </ul>
               </li>
@@ -49,106 +52,133 @@
         </div>
     </nav>   
     </header>
-    <!--Start of main section-->
-    <div class="container-fluid">
-        <h1>OUR PRODUCTS</h1>
-        <br>
-        <div class="mbuwa row row-cols-4 gap-3 d-flex justify-content-center my-5"></div>
+    <!--Start of main section -->
+    <br>
+      <h1>Fondation</h1>
+      <!-- <div id="fond" class="fond row justify-content-center" > -->
+    
+      <!-- </div>
+      <br>
+      <h1>Eyeshadow</h1>
+      <div class="eyeshadow row row-cols-4">
         
-        
+      </div>
+<br>
+      <h1>Concealers</h1>
+      <div class="concealer row row-cols-4">
+       
     </div>
-
+    </div> -->
    
-   <!--End of main section-->
-    
-        
-    
     
 
-    <footer class="text-center text-white" style="background-color:lightpink; margin-top:510PX;">
-        <!-- Grid container -->
-        <div class="container pt-4">
-          <!-- Section: Social media -->
-          <section class="mb-4">
-            <!-- Facebook -->
-            <a
-              class="btn btn-link btn-floating btn-lg text-dark m-1"
-              href="https://www.facebook.com"
-              role="button"
-              data-mdb-ripple-color="dark"
-              ><i class="fab fa-facebook-f"></i
-            ></a>
-      
-            <!-- Twitter -->
-            <a
-              class="btn btn-link btn-floating btn-lg text-dark m-1"
-              href="https://twitter.com"
-              role="button"
-              data-mdb-ripple-color="dark"
-              ><i class="fab fa-twitter"></i
-            ></a>
-      
-            <!-- Google -->
-            <a
-              class="btn btn-link btn-floating btn-lg text-dark m-1"
-              href="#!"
-              role="button"
-              data-mdb-ripple-color="dark"
-              ><i class="fab fa-google"></i
-            ></a>
-      
-            <!-- Instagram -->
-            <a
-              class="btn btn-link btn-floating btn-lg text-dark m-1"
-              href="https://www.instagram.com"
-              role="button"
-              data-mdb-ripple-color="dark"
-              ><i class="fab fa-instagram"></i
-            ></a>
-      
-            <!-- Linkedin -->
-            <a
-              class="btn btn-link btn-floating btn-lg text-dark m-1"
-              href="https://za.linkedin.com"
-              role="button"
-              data-mdb-ripple-color="dark"
-              ><i class="fab fa-linkedin"></i
-            ></a>
-            <!-- Github -->
-            <a
-              class="btn btn-link btn-floating btn-lg text-dark m-1"
-              href="#!"
-              role="button"
-              data-mdb-ripple-color="dark"
-              ><i class="fab fa-github"></i
-            ></a>
-          </section>
-          <!-- Section: Social media -->
+<!--Start of modal class-->
+    <div class="modal" id="myModal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">Added Items</h4>
+            <button type="button"  class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+          <div id="cart-body1">
+          
+          </div>
+          <div class="modal-footer">
+            <!--End of Modal Class-->
+            <div id="results"><h5>Total</h5></div>
+          </div>
         </div>
-        <!-- Grid container -->
-      
-        <!-- Copyright -->
-        <div class="text-center text-dark p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-          © 2020 Copyright:
-          <a class="text-dark" href="https://mdbootstrap.com/">LisaMbuwa</a>
-        </div>
-        <!-- Copyright -->
-      </footer>
-    <script src="//JS/product.js"></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
-      crossorigin="anonymous"
-    ></script>
+      </div>
+      </div>
+    </div> 
+    <div class="p-5" id="products">
+        <!-- display from js -->
+    </div>
+    <div id="cart-container">
+        <div id="cart-body"></div>
+    </div>
+    1
+<div class="cartTotalPrice">
+            <h2 class="totalPrice"></h2>
+          </div>
+        <!--End of main section-->
+    
+    <footer class="text-center text-white" style="background-color:lightpink; margin-top:61px;">
+      <!-- Grid container -->
+      <div class="container pt-4">
+        <!-- Section: Social media -->
+        <section class="mb-4">
+          <!-- Facebook -->
+          <a
+            class="btn btn-link btn-floating btn-lg text-dark m-1"
+            href="https://www.facebook.com"
+            role="button"
+            data-mdb-ripple-color="dark"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
+    
+          <!-- Twitter -->
+          <a
+            class="btn btn-link btn-floating btn-lg text-dark m-1"
+            href="https://twitter.com"
+            role="button"
+            data-mdb-ripple-color="dark"
+            ><i class="fab fa-twitter"></i
+          ></a>
+    
+          <!-- Google -->
+          <a
+            class="btn btn-link btn-floating btn-lg text-dark m-1"
+            href="#!"
+            role="button"
+            data-mdb-ripple-color="dark"
+            ><i class="fab fa-google"></i
+          ></a>
+    
+          <!-- Instagram -->
+          <a
+            class="btn btn-link btn-floating btn-lg text-dark m-1"
+            href="https://www.instagram.com"
+            role="button"
+            data-mdb-ripple-color="dark"
+            ><i class="fab fa-instagram"></i
+          ></a>
+    
+          <!-- Linkedin -->
+          <a
+            class="btn btn-link btn-floating btn-lg text-dark m-1"
+            href="https://za.linkedin.com"
+            role="button"
+            data-mdb-ripple-color="dark"
+            ><i class="fab fa-linkedin"></i
+          ></a>
+          <!-- Github -->
+          <a
+            class="btn btn-link btn-floating btn-lg text-dark m-1"
+            href="#!"
+            role="button"
+            data-mdb-ripple-color="dark"
+            ><i class="fab fa-github"></i
+          ></a>
+        </section>
+        <!-- Section: Social media -->
+      </div>
+      <!-- Grid container -->
+    
+      <!-- Copyright -->
+      <div class="text-center text-dark p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+        © 2020 Copyright:
+        <a class="text-dark" href="https://mdbootstrap.com/">LisaMbuwa</a>
+      </div>
+      <!-- Copyright -->
+    </footer>
+  
   </body>
-</html>
-
-
-
-
-
-
-
-
-
-
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://kit.fontawesome.com/95273b878a.js" crossorigin="anonymous"></script>
+  <script src="/JS/product.js">
+      
+  </script>
+  </html>
+  
