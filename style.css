@@ -3,6 +3,9 @@
     padding: 0;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+::-webkit-scrollbar{
+    display: none;
+}
 
 .navbar{
     background-color: lightpink;
@@ -50,6 +53,56 @@ main {
     height:110vh;
 }
 
-.pic {
+/* .pic {
     width: 400px;
-} 
+}  */
+.card {
+    width: 100% !important;
+    max-width: 300px;
+    margin: 10px;
+    border-radius: 0;
+    margin-inline: 20px;
+    text-align: center;
+    display: inline-block;
+    justify-content: center !important;
+    box-shadow: 0px 0px 20px 1px lightpink;
+    
+}
+.card:hover {
+    box-shadow: 0px 0px 20px 1px lightpink;
+    border: 2px solid lightcoral;
+    width: 100% !important;
+    max-width: 300px;
+    margin: 10px;
+    margin-inline: 20px;
+    text-align: center;
+    display: flexbox;
+    justify-content: center !important;
+
+}
+#products {
+    display: flex;
+    flex-wrap: wrap;
+}
+.text-center {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 35px;
+}
+main {
+    background-image: url(https://i.postimg.cc/mDvYtP4Y/cute.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.btn {
+    background-color: lightcoral!important;
+
+}
+.btn:hover {
+    background-color: lightpink !important;
+}
+.m-5 {
+    color: lightcoral;
+    font-weight: bolder;
+    font-size: 50px;
+
+}

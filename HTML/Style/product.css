@@ -63,29 +63,62 @@ body {
     border-radius: 20px;
     width: 30px;
 }
-/* #addbtn {
-    border: 1px solid #ED406E !important;
-    border-radius: 10px;
-    background-color: black;
-    margin: 5px;
-    height: 50px;
-    width: 200px;
-    color: white !important;
-    font-size:large;
-    overflow: hidden;
-    box-shadow: 0 0 0 0 transparent;
-    -webkit-transition: all 0.2s ease-in;
-    -moz-transition: all 0.2s ease-in;
-    transition: all 0.2s ease-in;
+
+.filterButton {
+    padding: 10px 20px;
+    background-color: #ccc;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+  }
+  #products{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+#product-img {
+    width: 300px ;
+    height: 300px;
+    display: flex;
+    margin-inline: 10px;
+    margin-block: 20px;
+    border-radius: 20px;
 }
+.button {
+    position: relative;
+    overflow: hidden;
+    height: 3rem;
+    padding: 0 2rem;
+    border-radius: 1.5rem;
+    background: lightpink !important;
+    background-size: 400%;
+    
+  }
+  .button:hover{
+    background-color: indianr ed !;
+  }
+  .filter-btn {
+    border-radius: 8px;
+    background-color: lightcoral;
+    border-color: lightpink;
+  }
+  .filter-btn:hover {
+    background-color: lightpink;
 
-#addbtn:hover {
-    color:#ED406E !important;
-    box-shadow: 0 0 30px 5px #ED406E;
-    -webkit-transition: all 0.2s ease-out;
-    -moz-transition: all 0.2s ease-out;
-    transition: all 0.2s ease-out;
-} */
-
-
-
+  }
+  #category {
+    background-color: lightpink;
+    border-radius: 10px;
+    border-color: lightcoral;
+  }
+  #category:hover {
+    background-color: lightcoral;
+  }
+  label {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    
+  }
+  
+  

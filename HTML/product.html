@@ -32,7 +32,8 @@
               <li class="nav-item">
                 <a class="nav-link"  id="navS"     href="./contact.html">Contact</a>
               </li>
-            </li><li class="nav-item">
+            </li>
+            <li class="nav-item">
               <a class="nav-link"  id="navS" data-bs-toggle="modal"
               data-bs-target="#myModal"  href="#myModal"><img src="https://i.postimg.cc/DzHKpVkv/cart.png" alt="cart-icon" id="cart-icon">  </a>
             </li>
@@ -43,7 +44,7 @@
                 <ul class="dropdown-menu" id="barbie">
                   <li><a class="dropdown-item"  id="navS"        href="./product.html">Products</a></li>
                   <li><a class="dropdown-item"  id="navS"      href="./admin.html">Admin</a></li>
-                  <li><a class="dropdown-item"  id="navS"       href="./checkout.html">Checkout</a></li>
+                 
 
                 </ul>
               </li>
@@ -54,24 +55,22 @@
     </header>
     <!--Start of main section -->
     <br>
-      <h1>Fondation</h1>
-      <!-- <div id="fond" class="fond row justify-content-center" > -->
-    
-      <!-- </div>
-      <br>
-      <h1>Eyeshadow</h1>
-      <div class="eyeshadow row row-cols-4">
-        
-      </div>
-<br>
-      <h1>Concealers</h1>
-      <div class="concealer row row-cols-4">
-       
+      <h1>Our Products</h1>
+      <!--Start of fliter button-->
+      <div class="filter">
+        <div>
+        <label for="category">Filter by Category:</label>
+            <select id="category">
+              <option value="">All</option>
+              <option value="Foundation">Foundation</option>
+              <option value="Concealer">Concealers</option>
+              <option value="Eyeshadow">Eyeshadow</option>
+            </select>
+            <button onclick="filterByCategory()" class="filter-btn">Filter</button>
+        </div>
     </div>
-    </div> -->
-   
-    
 
+      <!--End of fliter button-->
 <!--Start of modal class-->
     <div class="modal" id="myModal">
       <div class="modal-dialog">
@@ -85,7 +84,7 @@
           </div>
           <div class="modal-footer">
             <!--End of Modal Class-->
-            <div id="results"><h5>Total</h5></div>
+            <div class="total" id="total"><h5>Total</h5></div>
           </div>
         </div>
       </div>
@@ -95,12 +94,15 @@
         <!-- display from js -->
     </div>
     <div id="cart-container">
-        <div id="cart-body"></div>
+        <div id="cart-body" class="row"></div>
     </div>
-    1
+    
+    
 <div class="cartTotalPrice">
             <h2 class="totalPrice"></h2>
           </div>
+
+          
         <!--End of main section-->
     
     <footer class="text-center text-white" style="background-color:lightpink; margin-top:61px;">
@@ -167,7 +169,7 @@
     
       <!-- Copyright -->
       <div class="text-center text-dark p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-        © 2020 Copyright:
+        © 2023 Copyright:
         <a class="text-dark" href="https://mdbootstrap.com/">LisaMbuwa</a>
       </div>
       <!-- Copyright -->

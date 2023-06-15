@@ -1,66 +1,66 @@
 let products = [
   {
     id: 1,
-    name: " MAC fondation ",
+    name: " MAC foundation ",
     img: "https://i.postimg.cc/4d3S1q9W/mac-fondation-b.jpg",
-    price: "R2500",
-    catergory: "Fondation",
+    price: "2500",
+    category: "Foundation",
   },
 
   {
     id: 2,
-    name: "Revlon fondation  ",
+    name: "Revlon foundation  ",
     img: "https://i.postimg.cc/bwTHDQPH/revelon-fondation.jpg",
-    price: "R1000",
-    catergory: "Fondation",
+    price: "1000",
+    category: "Foundation",
   },
 
   {
     id: 3,
     name: "Maybelline foundation ",
     img: "https://i.postimg.cc/XN2PXHdL/REvelon-concealer.webp",
-    price: "R850",
-    catergory: "Fondation",
+    price: "850",
+    catergory: "Foundation",
   },
 
   {
     id: 4,
     name: " NYX foundation",
     img: "https://i.postimg.cc/wMvfkWwc/nyx-fond.jpg",
-    price: "R2500",
-    catergory: "Fondation",
+    price: "2500",
+    catergory: "Foundation",
   },
 
   {
     id: 5,
-    name: " MAC fondation ",
+    name: " MAC foundation ",
     img: "https://i.postimg.cc/4d3S1q9W/mac-fondation-b.jpg",
-    price: "R2500",
-    catergory: "Fondation",
+    price: "2500",
+    category: "Foundation",
   },
 
   {
     id: 6,
     name: "Revlon Eyeshadow ",
     img: "https://i.postimg.cc/Ls0WJS4t/rr.png",
-    price: "R1000",
-    catergory: "Eyeshadow",
+    price: "1000",
+    category: "Eyeshadow",
   },
 
   {
     id: 7,
     name: "Maybelline Eyeshadow",
     img: "https://i.postimg.cc/CLfQdX9D/55.webp",
-    price: "R850",
-    catergory: "Eyeshadow",
+    price: "850",
+    category: "Eyeshadow",
   },
 
   {
     id: 8,
     name: " NYX Eyeshadow",
     img: "https://i.postimg.cc/hPfqs26P/11t.webp",
-    price: "R2000",
-    catergory: "Eyeshadow",
+    price: "2000",
+    category: "Eyeshadow",
   },
 
   {
@@ -68,76 +68,85 @@ let products = [
     name: "Maybelline Eyeshadow",
     img: "https://i.postimg.cc/nhWrTs0N/mayibilieb-eyeshadow-palette.jpg",
     price: "R850",
-    catergory: "Eyeshadow",
+    category: "Eyeshadow",
   },
 
   {
     id: 10,
     name: " NYX Eyeshadow",
     img: "https://i.postimg.cc/LXLJJHkw/nyx-eyeshadow.jpg",
-    price: "R1200",
-    catergory: "Eyeshadow",
+    price: "1200",
+    category: "Eyeshadow",
   },
   {
     id: 11,
     name: " MAC Concealer ",
     img: "https://i.postimg.cc/L5kgbHnL/macp.png",
-    price: "R1500",
-    catergory: "Concealer",
+    price: "1500",
+    category: "Concealer",
   },
   {
     id: 12,
     name: " Maybelline concealer",
     img: "https://i.postimg.cc/85HygVJQ/may2.jpg",
-    price: "R2500",
-    catergory: "Concealer",
+    price: "2500",
+    category: "Concealer",
   },
   {
     id: 13,
     name: " Maybelline concealer ",
     img: "https://i.postimg.cc/prMP4zF1/maybelline.png",
-    price: "R2500",
-    catergory: "Concealer",
+    price: "2500",
+    category: "Concealer",
   },
   {
     id: 14,
     name: " MAC concealer ",
     img: "https://i.postimg.cc/bY5JHSrb/mac-con.webp",
-    price: "R2500",
-    catergory: "Concealer",
+    price: "2500",
+    category: "Concealer",
   },
   {
     id: 15,
     name: " Revlon Eyeshadow ",
     img: "https://i.postimg.cc/Ssxzv0cv/rev.jpg",
     price: "R2500",
-    catergory: "Concealer",
+    category: "Concealer",
   },
   {
     id: 16,
     name: " Revlon Eyeshadow",
     img: "https://i.postimg.cc/mgc4Vmcy/download-1.jpg",
     price: 2500,
-    catergory: "Concealer",
+    category: "Concealer",
   },
 ];
 
-// let dispFondation= document.querySelector(".fond");
-// Fondation.forEach((data) => {
-//   dispFondation.innerHTML += `
-//     <div class= "card productCard col-lg-3 col-md-3 col-12 mx-2 my-2">
-//       <img src="${data.img}" class="">
-//       <h4 class="">${data.name}</h4>
-//       <h4 class="">${data.price}</h4>
-//       <h4 class="">${data.catergory}</h4>
-//       <button type="button" class="btn btn-primary  mx-5" data-bs-toggle="modal" data-bs-target="#myModal" id="cart-btn">
-//       <img src="https://i.postimg.cc/xC5sY8MM/shopping-cart-xxl.png" width="25" height="25" class="d-inline-block rounded-circle me-2">
-//        add to cart</button>
-//       <div class="card-body">
+function displayProducts(category = "") {
+  const ourProducts = document.getElementById("products");
+  ourProducts.innerHTML = "";
+  products.forEach((data) => {
+    if (category === "" || data.category === category) {
+      let productElement = document.createElement("div");
+      productElement.innerHTML = `
+        <img src="${data.img}" alt="${data.name}" id="product-img">
+        <h3>${data.name}</h3>
+        <p>R${data.price}</p>
+        <button onclick="addToCart(${data.id})" class="btn add-btn button">Add To Cart</button>`;
+      ourProducts.appendChild(productElement);
+    }
+  });
+}
+displayProducts();
 
-//       </div>
-//     </div>`
-// });
+function filterByCategory() {
+  const selectCategory = document.getElementById("category");
+  const selectedCategory = selectCategory.value;
+  displayProducts(selectedCategory);
+}
+
+
+
 
 let Cart = JSON.parse(localStorage.getItem("product")) || [];
 function addToCart(productId) {
@@ -178,18 +187,7 @@ function calculateTotal() {
   totalElement.textContent = `${total}`;
 }
 
-function displayProducts() {
-  const ourProducts = document.getElementById("products");
-  products.forEach((data) => {
-    let productElement = document.createElement("div");
-    productElement.innerHTML = `
-      <img src="${data.img}" alt="${data.name}" id="product-img">
-      <h3>${data.name}</h3>
-      <p>R${data.price}</p>
-      <button onclick="addToCart(${data.id})" class="btn add-btn">Add To Cart</button>`;
-    ourProducts.appendChild(productElement);
-  });
-}
+
 let cart = JSON.parse(localStorage.getItem("cart"));
 if(!cart) {
   cart = [];
@@ -254,3 +252,33 @@ function renderCartTotal() {
 
   totalPriceEl.innerHTML = `Total Price: R${totalCartPrice.toFixed(2)}`;
 }
+// function displayProducts(category = "") {
+//   const ourProducts = document.getElementById("1st-products");
+//   ourProducts.innerHTML = "";
+//   myProducts.forEach((product) => {
+//     if (category === "" || product.category === category) {
+//       const productElement = document.createElement("div");
+//     productElement.innerHTML += `
+//   <div class="card">
+//       <div>
+//         <img src="${product.image}" alt="${product.name}">
+//       </div>
+//       <div class="details">
+//       <div class="min-details">
+//       <h1>${product.name}<span>${product.name}</span></h1>
+//       <h1 class="price"> R ${product.price}</h1>
+//       </div>
+
+//       <div class="options">
+//       <div class="description">
+//       </div>
+//       </div>
+//       <button onclick="addToCart(${product.id})" class="cart-btn">Add to cart</button> 
+//       </div>
+//   </div>`;
+//     ourProducts.appendChild(productElement);
+//     console.log(productElement);
+//     }
+//   });
+// }
+displayProducts();

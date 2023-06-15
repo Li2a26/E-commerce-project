@@ -3,6 +3,9 @@
     margin: 0;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+::-webkit-scrollbar{
+    display: none;
+}
 body {
     background-image: url(https://i.postimg.cc/g229vXsp/concelaor.png);
     

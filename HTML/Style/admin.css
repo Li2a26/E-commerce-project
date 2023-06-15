@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+::-webkit-scrollbar{
+    display: none;
+}
+
+.navbar{
+    background-color: lightpink;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+.navbar-brand {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size:30px !important;
+    
+}
+
+body {
+    background-color: antiquewhite !important;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#navS {
+    background-color: antiquewhite;
+    border-radius: 20px;
+    color: black;
+    width: 90px;
+    text-align: center;
+    margin: 5px;
+}
+#navS:hover {
+    background-color: lightpink;
+    
+}
+.navbar-toggler {
+    background-color: antiquewhite !important;
+}
+#barbie {
+    background-color: lightcoral !important;
+    border-radius: 20px;
+    width: 30px;
+}
+
+#cart-icon {
+    width: 33px;
+    height: 25px;
+}
+
+main {
+    min-height: 100vh;
+}
+
+
+.sort {
+    font-size: 20px;
+    font-weight: 500;
+  }
+  .select {
+    border-radius: 4px;
+  }
+  /* admin content content */
+    table {
+      margin-top: 100px;
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 20px;
+      text-align: center;
+    }
+    th {
+  padding: 10px;
+  text-align: center;
+  border: 2px solid #FAF7F7 !important ;
+    }
+  tr {
+    border-bottom: 2px solid #000 !important;
+    margin-bottom: 10px;
+  }
+  #admin-content {
+      border: 2px solid #000;
+  }
+  .edit {
+      color: green;
+  }
+  .edit:hover{
+      color: #000;
+      border: 2px solid green;
+      background-color: green;
+  }
+  .delete {
+      color: red;
+  }
+  .delete:hover{
+      color: #000;
+      border: 2px solid red;
+      background-color: red;
+  }
+.tandeka {
+    background-color: lightcoral;
+    border-radius: 10px;
+    border-color: lightpink;
+}
+.tandeka:hover {
+    background-color: lightpink;
+
+}
+.btn {
+    background-color: lightcoral!important;
+    border-color: pink!important;
+}
+.btn:hover {
+    background-color: lightpink!important;
+}
